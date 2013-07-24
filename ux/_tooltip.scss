@@ -1,0 +1,32 @@
+@import 'sencha-touch/default/global';
+
+/**
+ *
+ * @class Ext.ux.Tooltip
+ * @xtype tooltip
+ */
+$tooltip-bg-color: $base-color;
+
+
+@mixin ux-tooltip {
+  .ux-tooltip {
+    background-color: $tooltip-bg-color;
+    -webkit-border-radius: 0.3em;
+    -webkit-box-shadow: -5px -5px 5px 5px rgba(0,0,0,0.3);
+
+    .x-anchor {
+      background-color: $tooltip-bg-color;
+    }
+
+    .ux-tooltip-inner {
+      background-color: $tooltip-bg-color;
+      color: #ffffff;
+      font-size: 14px;
+      -webkit-border-radius: 0.3em;
+      margin: 4px;
+
+    }
+  }
+
+
+}
